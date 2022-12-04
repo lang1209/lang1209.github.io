@@ -1,0 +1,49 @@
+
+.lj3{
+    height: 50px;
+}
+
+.lj2{
+    height:200px;
+    background-color: gray;
+}
+
+.lj1{
+    height: 250px;
+}
+
+h1{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
+
+.bhttp{
+    width: 100px;
+    height: 25px;
+    background-color:aqua;
+    margin: 0 auto;
+}
+
+a{
+    
+    text-align: center;
+    text-decoration:none;
+    text-decoration-color: black;
+}
+
+.titlebox{
+    width: 1600px;
+    height:652px;
+    background-image: url("../images/titleBoxImage.png");
+}
+
+.basicI{
+    text-align:center;
+}
+
+body{
+    background-color:white;
+}
