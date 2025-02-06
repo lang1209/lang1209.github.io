@@ -18,7 +18,7 @@
             position: fixed;
             width: 100%;
             padding: 20px;
-            background: rgba(0,0,0,0.9);
+            background: linear-gradient(90deg, #ffffff, #d5d5d5, #ffffff);
             z-index: 1000;
             transform: translateY(-100%);
             animation: slideDown 1s forwards;
@@ -31,7 +31,7 @@
         /* 首页横幅 */
         .hero {
             height: 100vh;
-            background: linear-gradient(45deg, #2c3e50, #3498db);
+            background: linear-gradient(45deg, #ff0000, #0026ff);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -57,7 +57,7 @@
 
         /* 内容区域动画 */
         .card {
-            background: white;
+            background: rgb(236, 236, 236);
             padding: 30px;
             margin: 20px;
             border-radius: 10px;
@@ -153,10 +153,10 @@
             <h2>作品展示</h2>
             <div class="grid">
                 <div class="project">
-                    <img src="project1.jpg" alt="项目1">
                     <div class="overlay">
                         <h3>c++_senior_git</h3>
                     </div>
+                    <a href="https://github.com/lang1209/c-_senior">传送门</a>
                 </div>
                 <!-- 更多项目 -->
             </div>
@@ -164,6 +164,13 @@
     </section>
 
     <script>
+        const isInViewport = (rect) => {
+        return (
+            rect.top < window.innerHeight - 100 && 
+            rect.bottom > 0
+            );
+        };
+
         // 滚动动画触发
         window.addEventListener('scroll', () => {
             document.querySelectorAll('.card, .timeline-item').forEach(el => {
